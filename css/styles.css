@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap");
+
 html {
     background-color: antiquewhite;
+    font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* navigasi */
@@ -62,27 +65,81 @@ html {
 
 /* kartu 3 kolom */
 
-#card-container {
+/* pelajari dari https://www.freecodecamp.org/news/learn-css-basics-by-building-a-card-component/ */
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    height: 214px;
+    object-fit: cover;
+}
+
+#container {
     display: flex;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20vh;
     justify-content: center;
-    padding: 55px;
-    margin-bottom: 20px;
-    background-color: #000;
-    width: 100px;
 }
 
-.produk { 
-
+.card {
+    background-color: #f2f2f2;
+    border: 1px #bacdd8;
+    padding: 8px;
+    border-radius: 12px;
 }
 
-.satu {
-
+/* Style div elements that have class equal to tag */
+.tag {
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
 }
 
-.dua {
+/* Style div elements that have class equal to name */
+.name {
+  font-size: 24px;
+  font-weight: 600;
 
+  margin-top: 16px;
 }
 
-.tiga {
+/* Style p element */
+p {
+  font-size: 14px;
+  color: #7f8c9b;
+  line-height: 150%;
+}
 
+/* Style button element */
+button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+
+  font-weight: 600;
+  color: #0077ff;
+  background-color: #e0efff;
+
+  /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+  margin: 0 auto;
+  display: block;
+
+  /* Button is a clickable element, therefore it should have a pointer cursor */
+  cursor: pointer;
+}
+
+.card__details {
+  /* Add space around the details */
+  padding: 16px 8px 8px 8px;
+}
+
+/* Add style when button is focused or hovered */
+button:focus,
+button:hover {
+  background-color: #0077ff;
+  color: #e0efff;
 }
