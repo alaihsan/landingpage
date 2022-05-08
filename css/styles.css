@@ -81,9 +81,11 @@ img {
 
 #container {
     display: flex;
-    max-width: 600px;
-    margin: auto;
-    margin-top: 20vh;
+    justify-content: column;
+    max-width: 300px;
+    margin-top: 5vh;
+    margin-left: 30px;
+    margin-right: 10px;
     justify-content: center;
 }
 
@@ -97,7 +99,7 @@ img {
 /* Style div elements that have class equal to tag */
 .tag {
   padding: 4px 8px;
-  border: 1px solid #e5eaed;
+  border: 1px solid #9a9ea0;
   border-radius: 50px;
   font-size: 12px;
   font-weight: 600;
